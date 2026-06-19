@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia vintage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-barbearia">
+        <h1>BARBEARIA <span>VINTAGE</span></h1>
+        <p>Escolha seu estilo e reserve seu horário profissional</p>
+    </header>
+
+    <div class="main-layout">
+        <section class="container-cortes">
+            <h2>Modelos Disponíveis & Valores</h2>
+            <div id="cards-dinamicos" class="grid-cortes">
+                </div>
+        </section>
+
+        <section class="container-formulario">
+            <h2>Marque seu Horário</h2>
+            <form id="meu-form-agendamento">
+                <div class="campo">
+                    <label>Seu Nome:</label>
+                    <input type="text" id="input-nome" required placeholder="Ex: francisco josé">
+                </div>
+
+                <div class="campo">
+                    <label>WhatsApp / Telefone:</label>
+                    <input type="tel" id="input-telefone" required placeholder="Ex: (88) 40028922">
+                </div>
+
+                <div class="campo">
+
+                   <label for="servico">Serviço desejado:</label>
+
+<select id="servico" name="servico">
+   
+    <option value="">-- Escolha o modelo --</option>
+    <option value="degrade">Degradê</option>
+    <option value="social">Social</option>
+    <option value="americano">Americano</option>
+    <option value="moicano">Moicano</option>
+    <option value="buzzcut">Buzz Cut</option>
+    <option value="Jit Fade">Jit Fade</option>
+</select>
+                </div>
+
+                <div class="campo">
+                    <label>Data e Hora:</label>
+                    <input type="datetime-local" id="input-data" required>
+                </div>
+
+                <button type="submit" class="btn-agendar">Confirmar e Salvar</button>
+            </form>
+
+            <div class="painel-agenda">
+                <h3>Horários Agendados</h3>
+                <ul id="lista-agenda-real">
+                    </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
