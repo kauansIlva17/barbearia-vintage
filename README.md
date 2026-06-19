@@ -40,4 +40,4 @@ CREATE TABLE cortes (
 );
 
 Autor
-Francisco Kauan Silva Oliveira- Desenvolvedor do Projeto - Seu Link do GitHub se tiver
+Francisco Kauan Silva Oliveira- Desenvolvedor do Projeto
